@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/64b74efe4a.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER STICKY MINIMALISTA -->
+    <header>
+        <div class="container header">
+            <div class="bannerDesk">
+                 Venta por mayor <a id="ventaPorMayor" href="https://wa.me/541137982669">
+                 <i class="fa fa-whatsapp"></i> 11-3798-2669</a> - <b>Envío gratis</b> en compras mayores a $4000 <i class="fas fa-shipping-fast"></i> - 
+                 Debido al <a id="covid" href="https://www.argentina.gob.ar/salud/coronavirus-COVID-19?utm_source=search&utm_medium=cpc&utm_campaign=coronavirus&utm_term=grants&utm_content=nacional&gclid=CjwKCAjwiMj2BRBFEiwAYfTbCiezKJgaDpgBSqD2sr77eJOKmiXQMpwSaFGFjrdfSQT7z1en_KRymBoCKqgQAvD_BwE">
+                <i class="fas fa-virus"></i> COVID-19</a> puede que los envíos se retrasen.
+            </div>
+                <div class="bannerPhone">
+                    <b>Envío gratis</b> en compras mayores a $4000 <i class="fas fa-shipping-fast"></i>
+                </div>
+        </div>
+    </header>
+         
+    <!-- MENU LOGO Y 'BOTONES' -->
+    <nav class="container-fluid navbar">
+    <div class="menu">
+         <div class="row"> 
+            <!-- <div class="col-2 logo"> -->                                                              <!-- acá abajo ↓ está hecha la trampa con espacios invisibles -->
+                 <a class="logo" href="index.html"> <img src="img/logo (2).png" alt="logo" width="135px"></a> ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+            <!-- </div>  -->
+        
+         
+            
+          
+
+            <!-- <div class="col-10 nav"> -->
+            <ul class="nav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">Productos <svg class="bi bi-caret-down-fill" width="0.8em" height="0.8em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></a>
+                    <ul class="item"><li><a href="#">Teclados Mecanicos</a>
+                        <ul>
+                            <li><a href="#">RGB</a></li>
+                            <li><a href="#">TKL</a></li>
+                            <li><a href="#">Wireless</a></li>
+                            <li><a href="#">Ver todo</a></li>
+                        </ul> 
+                        </li>
+                        <li><a href="#">Keycaps</a>
+                            <ul>
+                                <li><a href="#">Packs de colores</a></li>
+                                <li><a href="#">Packs de metales</a></li>
+                                <li><a href="#">Custom Keycaps</a></li>
+                                <li><a href="#">Ver todo</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>             
+                <li><a href="#">Preguntas</a></li>           
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        <!--</div> -->
+        </div> 
+    </div>
+    </nav>
+                                   <!-- CAROUSEL -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/tecladocarousel1.jpg">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/tecladocarousel2.jpg">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/tecladocarousel3.jpg">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/tecladocarousel4.jpg">
+            </div>    
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/tecladocarousel5.jpg">
+            </div>   
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- SECTION Y EL CONTENIDO DE LA PAG -->
+    <!-- PRIMERO LOS TECLADOS -->
+    <section class="container">
+        <div class="content">
+            <div class="titulo">
+            <h2>Custom Keyboards</h2>
+            </div>
+            <div class="row">
+                <div class="divimgContent">
+                    <a href="#">  <img class="imgContent" src="img/mechanicalkeyboard.jpg" alt="" width="250px" height="250px"></a>
+                    <div class="specs">
+                      <a href="#">Teclado mecánico Vintage 60% 
+                         <br>
+                          Switches Mx Brown </a>
+                    </div>
+                    <hr>
+                    <div class="precio">
+                        PRECIO: IMPAGABLE  
+                    </div>
+                </div>
+            
+                <div class="divimgContent">
+                    <a href="#">   <img class="imgContent" src="img/mechanicalkeyboard2.jpg" alt="" width="250px" height="250px"></a>
+                    <div class="specs">
+                      <a href="#">  Teclado mecánico Custom 65% 
+                          <br>
+                          Switch Mx Black
+                      </a>
+                    </div>
+                    <hr>
+                    <div class="precio">
+                        PRECIO: CARISIMO 
+                    </div> 
+                </div>
+                <div class="divimgContent">
+                    <a href="#">   <img class="imgContent" src="img/mechanicalkeyboard3.jpg" alt="" width="250px" height="250px"></a>
+                    <div class="specs">
+                       <a href="#"> Teclado mecánico Custom 68%
+                           <br>
+                           Switch Mx Red
+                       </a>
+                    </div>
+                    <hr>
+                    <div class="precio">
+                        PRECIO: MUY CARO
+                    </div> 
+                </div>
+                <div class="divimgContent">
+                    <a href="#">   <img class="imgContent" src="img/mechanicalkeyboard4.jpg" alt="" width="250px" height="250px"></a>
+                    <div class="specs">
+                      <a href="#">  HyperX Alloy FPS RGB 104k
+                          <br>
+                          Switch Mx Silent
+                      </a>
+                    </div>
+                    <hr>
+                    <div class="precio">
+                        PRECIO: CARISIMO
+                    </div>
+                </div>
+            </div>
+            <!-- DESPUES LOS KEYCAPS -->
+            <div class="titulo">
+            <h2>Custom Keycaps</h2>
+            </div>
+            <div class="row">
+                <div class="divimgContent">
+                    <a href="#">  <img class="imgContent" src="img/keycaps.jpg" alt="" width="250px" height="250px"></a> 
+                    <div class="specs">
+                      <a href="#">  Keycaps normales clásicas</a>
+                    </div>
+                    <hr>
+                    <div class="precio">
+                        PRECIO: RE SALADO 
+                    </div>
+                </div>
+                <div class="divimgContent">
+                    <a href="#">   <img class="imgContent" src="img/keycaps2.jpg" alt="" width="250px" height="250px"></a>
+                    <div class="specs">
+                      <a href="#">  Keycaps de metal</a>
+                    </div>
+                    <hr>
+                    <div class="precio">
+                        PRECIO: RE SALADO
+                    </div> 
+                </div>
+                <div class="divimgContent">
+                    <a href="#">   <img class="imgContent" src="img/keycaps3.jpg" alt="" width="250px" height="250px"></a>
+                    <div class="specs">
+                      <a href="#">  Keycaps de colores</a>
+                    </div>
+                    <hr>
+                    <div class="precio">
+                        PRECIO: RE SALADO
+                    </div> 
+                </div>
+                <div class="divimgContent">
+                    <a href="#">   <img class="imgContent" src="img/keycaps4.jpg" alt="" width="250px" height="250px"></a>
+                    <div class="specs">
+                      <a href="#">Custom Keycaps</a>
+                    </div>
+                    <hr>
+                    <div class="precio">
+                        PRECIO: UF SALADISIMO
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </section>
+     
+
+
+    
+
+
+
+    <footer>
+        TODOS LOS DERECHOS RESERVADOS 2020 
+    </footer>
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

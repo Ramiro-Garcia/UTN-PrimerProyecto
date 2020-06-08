@@ -1,0 +1,227 @@
+*{margin: 0; padding: 0;}
+
+body{
+    /*background-color: grey;*/
+    background-image: url(img/posiblebackground.jpg);
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    text-align: center;
+    background-color: black;
+    color: snow;
+    font-size: 13px;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    font-family: 'Poppins', sans-serif;
+}
+#ventaPorMayor{
+    color: greenyellow;
+    text-decoration: none;
+}
+#covid{
+    color: blue;
+    text-decoration: none;
+}
+ 
+/* MENU, BOTONES Y LOGO - MENU, BOTONES Y LOGO - MENU, BOTONES Y LOGO - MENU, BOTONES Y LOGO */
+nav{
+    background-color: rgb(36, 45, 68);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.menu{
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style: none;
+    align-self: flex-end;
+    float: right;
+}
+.nav li a{
+    background-color: rgb(36, 45, 68);
+    color: snow;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block; 
+}
+.item li a{
+    background-color: lightslategray;
+    font-size: 16px;
+    color: rgb(36, 45, 68);
+}
+.nav li a:hover{
+    background-color: snow;
+    color: rgb(36, 45, 68);
+}
+
+.logo{float: left;}
+
+.nav{float: right;}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul{
+    display: block;
+}
+.nav li ul li{
+    position: relative;
+    z-index: 5000;
+}
+.nav li ul li ul li {
+    right: -193px;
+    top: -48px;
+}
+
+
+
+/* CAROUSEL - CAROUSEL - CAROUSEL - CAROUSEL - CAROUSEL - CAROUSEL - CAROUSEL - CAROUSEL */
+.carousel-item{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    top: -250px;
+    transition: transform 1s;
+}
+
+
+
+/* CONTENIDO - SECTION - CONTENIDO - SECTION - CONTENIDO - SECTION - CONTENIDO - SECTION */
+
+.divimgContent{
+    background-color: lightslategray;
+    border: 1px solid rgb(36, 45, 68);
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    /*width: 24.5%;*/
+    /*height: 406px;*/
+}
+.imgContent{
+    border: 1px solid rgb(36, 45, 68);
+    margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 1s, height 1s, transform 1s;
+}
+.imgContent:hover{
+    transform: scale(1.5);
+}
+
+.specs{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.specs a{
+    color: black;
+}
+.specs a:hover{
+    text-decoration: none;
+    color: black;
+
+}
+.precio{
+    font-size: 1.2em;
+    text-align: center;
+}
+h2{
+    padding-top: 0.5%;
+    color:snow;
+    font-family: 'Poppins', sans-serif;
+}
+
+hr{background-color: rgb(36, 45, 68);}
+
+section{
+    margin-top: 1%;
+}
+
+
+
+
+footer{
+    background-color: rgb(36, 45, 68);
+    margin-top: 1%;
+    padding-right: 2%;
+    width: 100%;
+    height: 2%; 
+    text-align: right;
+    color: snow;
+
+}
+
+
+/* RESPONSIVE DESIGN - RESPONSIVE DESIGN - RESPONSIVE DESIGN - RESPONSIVE DESIGN*/
+/*Resoluciones altas*/
+@media screen and (min-width: 1280px) {
+    .bannerDesk{display: block;}
+    .bannerPhone{display: none;}
+    #myCarousel{display: block;}
+   
+}
+
+/*Resoluciones medias-altas*/
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    .bannerDesk{display: block;}
+    .bannerPhone{display: none;}
+    nav{font-size: 18px;}
+    #myCarousel{display: block;}
+    .carousel-item{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: -50px;
+    transition: transform 1s;
+}
+}
+
+/*Resoluciones medias*/
+@media screen and (min-width: 580px) and (max-width: 991px) {
+    .bannerDesk{display: none;}
+    .bannerPhone{display: block;}
+    nav{font-size: 16px;}
+    nav>div>div>a>img{width: 100px;}
+
+    #myCarousel{display: block;}
+    .carousel-item{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: -100px;
+    transition: transform 1s;
+}
+h2{
+        text-align: center;
+    }
+}
+
+/*Resoluciones bajas*/
+@media screen and (min-width: 0px) and (max-width:579px){
+    .bannerDesk{display: none;}
+    .bannerPhone{display: block;}
+    nav{font-size: 16px;}
+    nav>div>div>a>img{width: 80px;}
+    
+    #myCarousel{display: none;}
+    h2{
+        text-align: center;
+    }
+    .imgContent:hover{
+    transform: scale(1.2);
+}
+}
+
+

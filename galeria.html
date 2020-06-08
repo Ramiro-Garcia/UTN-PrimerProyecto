@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    *{margin: 0; padding: 0;}
+body {
+    /*background-image: url(img/posiblebackground.jpg);*/
+    background-image: url(img/logowallpaper.jpg); 
+    background-size: contain;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    /*background-color: rgb(63, 66, 68);*/
+    /*background-image: url(img/logowallpaper.jpg);*/
+    /*background-size: contain;*/
+    margin: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+
+}
+.img{
+    width: 250px;
+    float: left;
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+.caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1.5)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1.5)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+</style>
+<body>
+    
+        <section class="container">
+            <div class="container galeria">
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard2.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard4.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard6.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard7.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+                <div class="img">
+                    <img class="myImg"  src="img/mechanicalkeyboard8.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+                <div class="img">
+                    <img class="myImg" src="img/mechanicalkeyboard9.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                     <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                     </div>
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard10.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard11.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                    </div>
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard12.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                           <span class="close">&times;</span>
+                           <img class="modal-content" id="img01">
+                           <div id="caption"></div>
+                    </div>
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard13.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                           <span class="close">&times;</span>
+                           <img class="modal-content" id="img01">
+                           <div id="caption"></div>
+                    </div>
+                <div class="img">
+                    <img  class="myImg" src="img/mechanicalkeyboard14.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <div class="img">
+                    <img class="myImg" src="img/mechanicalkeyboard15.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <div class="img">
+                    <img class="myImg" src="img/mechanicalkeyboard16.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <div class="img">
+                    <img class="myImg" src="img/mechanicalkeyboard17.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <div class="img">
+                    <img class="myImg" src="img/mechanicalkeyboard18.jpg" alt="" style="width:100%;max-width:300px">
+                </div>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+
+            </div>
+        </section>
+
+    
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div class="caption"></div>
+  </div>
+
+
+
+  
+  
+
+
+<!-- JS para que se abran las imagenes -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementsByClassName('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementsByClassName('caption');
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
+
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

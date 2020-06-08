@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- CSS Bootstrap ...... no se si es necesario en este .html -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<style>
+*{margin: 0; padding: 0;}
+body{
+   background-image: url(img/posiblebackground.jpg);
+   background-size: cover;
+   font-family: 'Poppins', sans-serif;
+   font-size: 15px;
+}
+section{
+        margin: 0.5%;
+        padding: 0.2%;
+        /*background-color: rgb(36, 45, 68);*/
+        /*background-image: url(img/logowallpaper.jpg);*/
+        border-radius: 20px;
+}
+.logo{
+    text-align: center;
+}
+.divForm{
+        /*margin: 2%;*/
+        margin-left: auto;
+        margin-right: auto;
+}
+#contactoForm{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightslategray;
+    border-radius: 15px;
+    padding: 2%;
+}
+.nombre{
+    float: left;
+}
+.apellido{
+    float: left;
+}
+.email{
+    float: bottom;
+}
+#contactoForm input,#contactoForm select,#contactoForm textarea{
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 1.7%;
+    box-sizing: border-box;
+    border: 1px solid rgb(36, 45, 68);
+    border-radius: 7px;
+}
+
+
+#contactoForm input[type='submit']{
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    border:none;
+    width: 25%;
+    margin-left:37.3%;
+    
+    }
+    #contactoForm input[type='submit']:hover{
+        background-color: rgb(36, 45, 68);
+        color: white;
+    }
+
+hr{
+    background-color: rgb(36, 45, 68);
+    text-align: center;
+    width: 249px;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+
+</style>
+<body>
+    <section class="container">
+        <div class=" logo">
+           <a href="index.html"> 
+               <img src="img/logo (2).png" alt="" width="170px">
+            </a>
+        </div>
+        <div class="container divForm">
+        <form action="mailto:mail@mail.com?Subject=Contacto" method="POST" id="contactoForm">
+            <div class="col-md-6 nombre">
+                <label>
+                 <b>  Nombre </b> <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required>
+                </label>
+             </div>
+             <div class="col-md-6 apellido">
+                 <label>
+                 <b>   Apellido </b> <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" required>
+                 </label>
+              </div>
+
+             <div>
+               <label class="col-md-12 email">
+                 <b> Email </b> <input type="email" name="email" placeholder="Escriba su dirección de email" required>
+               </label>
+             </div>
+            <div class="col-md-12">
+            <label><b> Asunto </b></label>
+            <select name="asunto" required>
+                <option selected>Seleccione</option>
+                <option>Compra rechazada</option>
+                <option>Pago</option>
+                <option>Envío</option>
+                <option>Devoluciones</option>
+                <option>Compré por error</option>
+                <option>Garantía</option>
+                <option>Otro</option>
+            </select> 
+        </div>
+        <div  class="col-md-12">
+            <b> Comentarios y/o consultas:</b> 
+              <textarea name="comentarios" id="cajaTexto" cols="70" rows="10" placeholder="Por favor, detalle aquí sus dudas y/o inquietudes."  required></textarea>
+        </div>
+        <div  class="col-md-12">
+            <label for="exampleFormControlFile1"><b>Adjuntar archivo</b></label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <div  class="col-md-12">
+            <input type="submit" value="Enviar">
+        </div>
+        <hr>
+        <div class=" logo">
+            <a href="index.html">
+                 <img src="img/logo (2).png" alt="" width="90px">
+            </a>
+        </div>
+        </form>
+        </div>
+    </section>
+
+
+
+    <!-- JS Bootstrap ...... no se si es necesario en este .html -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
